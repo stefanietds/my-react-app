@@ -1,0 +1,44 @@
+.svg-container {
+  display: flex; 
+  align-items: baseline;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-left: 120px;
+  background-color: pink;
+  height: 97vh;
+}
+
+.svg-container svg {
+  border: 1px DASHED rgb(74, 74, 223); 
+  background-color: white; 
+  display: block;
+  align-items: center;
+  margin: 2px;
+  max-width: 100%; 
+  max-height: 100%;
+  height: auto;
+  width: auto; 
+
+  background-color: pink;
+  margin-bottom: 2%;
+}
+
+ @media (max-width: 1600px) {
+  .svg-container svg {
+    max-width: 50%; 
+    height: 50%;
+    overflow: hidden;
+  }
+}
+/*
+
+@media (min-width: 2000px) {
+  .svg-container svg {
+    max-width: 60%; 
+    max-height: 60%; 
+  }
+}
+ */
+
+
