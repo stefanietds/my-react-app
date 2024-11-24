@@ -26,27 +26,23 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   margin-bottom: 12px;
 }
 
-.col {
+.col-label,
+.col-input {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-width: 200px; 
   padding: 8px;
+  width: 100%;
+  justify-content: center;
 }
 
-.label {
-    display: flex;
-  justify-content: center; 
-  align-items: center;
-  margin-right: 4px;
-}
-
-.input {
-  flex: 1;
+.col-label {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center; 
 }
 
 input {
@@ -55,24 +51,22 @@ input {
   margin-top: 4px;
   border: 1px solid #ccc;
   border-radius: 4px;
-} 
-
-/* 
- @media (max-width: 1600px) {
-  .svg-container svg {
-    max-width: 50%; 
-    height: 50%;
-    overflow: hidden;
-  }
-} */
-/*
-
-@media (min-width: 2000px) {
-  .svg-container svg {
-    max-width: 60%; 
-    max-height: 60%; 
-  }
 }
- */
 
+.row {
+  display: flex;
+  gap: 8px; 
+}
 
+.col-label {
+  flex: 0 0 30%; 
+}
+
+.col-input {
+  flex: 1; 
+}
+
+.col-label,
+.col-input {
+  min-width: 200px; 
+}

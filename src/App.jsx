@@ -8,51 +8,30 @@ const App = () => {
       <div className="svg-container">
         <div className="card">
           <div className="card-content">
-
             <div className="row">
-
-              <div className="col label">
+              <div className="col-label">
                 <label htmlFor="name">Nome</label>
               </div>
-
-              <div className="col input">
-                <TextField
-                  id="standard-password-input"
-                  label="Password"
-                  type="password"
-                  autoComplete="current-password"
-                  variant="standard"
-                />
+              <div className="col-input">
+                <input></input>
               </div>
-
             </div>
 
             <div className="row">
-              <div className="col label">
+              <div className="col-label">
                 <label htmlFor="age">Idade</label>
               </div>
-              <div className="col input">
-                <TextField
-                  id="standard-password-input"
-                  label="Password"
-                  type="password"
-                  autoComplete="current-password"
-                  variant="standard"
-                />
+              <div className="col-input">
+                <input></input>
               </div>
             </div>
+
             <div className="row">
-              <div className="col label">
+              <div className="col-label">
                 <label htmlFor="read">Read</label>
               </div>
-              <div className="col input">
-                <TextField
-                  id="standard-password-input"
-                  label="Password"
-                  type="password"
-                  autoComplete="current-password"
-                  variant="standard"
-                />
+              <div className="col-input">
+                <input></input>
               </div>
             </div>
           </div>
