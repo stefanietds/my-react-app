@@ -9,28 +9,62 @@
   height: 97vh;
 }
 
-.svg-container svg {
-  border: 1px DASHED rgb(74, 74, 223); 
-  background-color: white; 
-  display: block;
-  align-items: center;
-  margin: 2px;
-  max-width: 100%; 
-  max-height: 100%;
-  height: auto;
-  width: auto; 
-
-  background-color: pink;
-  margin-bottom: 2%;
+.card {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px; 
+  padding: 8px;
+}
+
+.label {
+    display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-right: 4px;
+}
+
+.input {
+  flex: 1;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} 
+
+/* 
  @media (max-width: 1600px) {
   .svg-container svg {
     max-width: 50%; 
     height: 50%;
     overflow: hidden;
   }
-}
+} */
 /*
 
 @media (min-width: 2000px) {

@@ -1,21 +1,64 @@
-import SvgComponent1 from "./componentes/comp1";
-import SvgComponent2 from "./componentes/comp2";
-import SvgComponent3 from "./componentes/comp3";
-import SvgComponent4 from "./componentes/comp4";
+import TextField from "@mui/material/TextField";
 
 import "./index.css";
 
 const App = () => {
-
   return (
-    <div>
+    <>
       <div className="svg-container">
-        <SvgComponent1 />
-        <SvgComponent2 />
-        <SvgComponent3 />
-        <SvgComponent4 />
+        <div className="card">
+          <div className="card-content">
+
+            <div className="row">
+
+              <div className="col label">
+                <label htmlFor="name">Nome</label>
+              </div>
+
+              <div className="col input">
+                <TextField
+                  id="standard-password-input"
+                  label="Password"
+                  type="password"
+                  autoComplete="current-password"
+                  variant="standard"
+                />
+              </div>
+
+            </div>
+
+            <div className="row">
+              <div className="col label">
+                <label htmlFor="age">Idade</label>
+              </div>
+              <div className="col input">
+                <TextField
+                  id="standard-password-input"
+                  label="Password"
+                  type="password"
+                  autoComplete="current-password"
+                  variant="standard"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col label">
+                <label htmlFor="read">Read</label>
+              </div>
+              <div className="col input">
+                <TextField
+                  id="standard-password-input"
+                  label="Password"
+                  type="password"
+                  autoComplete="current-password"
+                  variant="standard"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
